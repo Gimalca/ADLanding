@@ -203,7 +203,7 @@ Startuply = {
                     $parent = $el.parent(),
                     elHeight = $el.outerHeight(),
                     parentHeight = $parent.outerHeight(),
-                    padding = (parentHeight - elHeight) / 2;
+                    padding = (parentHeight - elHeight) / 3;
 
                 if ( padding >= 0 ) {
                     $parent.css({'padding-top': padding, 'padding-bottom': 0 });

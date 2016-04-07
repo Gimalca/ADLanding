@@ -1,4 +1,4 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 @import "lib/font-lineicons.css";
 @import "lib/toastr.min.css";
@@ -201,7 +201,7 @@ body {
 }
 
 h1 {
-	font-size: 58px;
+	font-size: 45px;
 }
 
 h2 {
@@ -238,6 +238,8 @@ h6,
 	display: block;
 	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 	line-height: 1.1;
+	/* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
+	/* color: #f5f5f5; */
 }
 
 h1,
@@ -247,7 +249,7 @@ h4,
 h5,
 h6 {
 	margin: 20px 0 15px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h6 {
@@ -420,7 +422,7 @@ input[type=password],
 .fixed-menu .navigation-header.white-dropdown .navigation-bar.navigation-bar-left > li.active:not(.featured) > a,
 .navigation-header.white-header .btn.btn-outline,
 .form-register.form-register-small .form-control {
-	border-color: #1ac6ff;
+	border-color: #00C0B8;
 }
 
 .base-clr-bg,
@@ -507,7 +509,7 @@ input[type=submit]:not(.default).btn-outline-color.pressed,
 .color-landing-page .newsletter-section,
 .color-landing-page .feedback-section,
 .color-landing-page .footer {
-	background-color: #1ac6ff;
+	background-color: #AE3286;
 }
 
 .base-clr-txt,
@@ -612,17 +614,17 @@ input[type=submit]:not(.default).btn-no-border.pressed,
 .package-column.featured > .package-detail .btn.btn-outline-color:hover,
 .package-column:hover > .package-detail .btn.btn-outline-color:focus,
 .package-column.featured > .package-detail .btn.btn-outline-color:focus {
-	color: #1ac6ff;
+	color: #00C0B8;
 }
 
 ::selection {
 	color: #ffffff;
-	background-color: #1ac6ff;
+	background-color: #00C0B8;
 }
 
 ::-moz-selection {
 	color: #ffffff;
-	background-color: #1ac6ff;
+	background-color: #00C0B8;
 }
 
 .bg-low-poly,
@@ -806,7 +808,7 @@ blockquote:after {
 }
 
 .style-switcher .template-set-color .color.blue {
-	background-color: #1ac6ff;
+	background-color: #00C0B8;
 }
 
 .style-switcher .template-set-color .color.berry {
@@ -4421,11 +4423,11 @@ td.cart-list-item-price {
 .navigation-header .navigation-brand {
 	float: left;
 	margin-right: 50px;
-	margin-top: 17px;
+	margin-top: 11px;
 }
 
 .navigation-header .navigation-brand .brand-logo {
-	width: 130px;
+	width: 250px;
 }
 
 .navigation-header .navigation-brand .brand-logo .logo {
@@ -4433,8 +4435,8 @@ td.cart-list-item-price {
 	-moz-background-size: contain;
 	background-size: contain;
 	display: block;
-	height: 30px;
-	background-image: url("../img/logo.png");
+	height: 50px;
+	background-image: url("../img/agente-directo.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	line-height: 30px;
@@ -4442,7 +4444,7 @@ td.cart-list-item-price {
 
 .navigation-header .navigation-brand .brand-logo .logo.logo-alt {
 	display: none;
-	background-image: url("../img/logo-inverted.png");
+	background-image: url("../img/agente-directo.png");
 }
 
 .navigation-header .navigation-brand .brand-logo h4 {
@@ -4527,7 +4529,7 @@ td.cart-list-item-price {
 	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: rgba(240, 240, 240, 0.8);
+	color: #1d1d1d;
 	line-height: 1;
 	border-bottom: 2px solid transparent;
 }
@@ -4550,6 +4552,7 @@ td.cart-list-item-price {
 .navigation-header .navigation-bar.navigation-bar-left > li.active > a {
 	border-style: solid;
 	border-width: 0 0 2px;
+	font-weight: 500;
 }
 
 .navigation-header .navigation-bar.navigation-bar-right {
@@ -4739,6 +4742,8 @@ header {
 
 .fixed-menu .navigation-header .navigation-brand .brand-logo .logo.logo-alt {
 	display: block;
+	max-width: 250px;
+	max-height: 55px;
 }
 
 .navigation-header.white-header {
@@ -5302,7 +5307,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-moz-background-clip: padding;
 	border-radius: 3px;
 	background-clip: padding-box;
-	margin: 50px 0 0;
+	margin: 30px 0 0;
 	display: inline-block;
 	padding: 15px;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -5443,7 +5448,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .static-header .heading-block.centered-block {
-	padding: 70px 0;
+	padding: 0px 0;
 }
 
 .static-header .overlay {
@@ -5468,7 +5473,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .static-header.register-version .signup-wrapper {
-	margin-top: 20px;
+	margin-top: 5px;
 	width: auto;
 }
 
