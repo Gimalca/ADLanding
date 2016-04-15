@@ -2377,6 +2377,7 @@ input[type=checkbox]:focus {
 .long-block {
 	position: relative;
 	padding: 40px 0 25px;
+	background-color: #2860A3;
 }
 
 .long-block h1,
