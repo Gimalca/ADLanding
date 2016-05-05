@@ -403,6 +403,14 @@ Startuply = {
 
         validateOptions = {
             rules: {
+                fullname: {
+                    required: true,
+                     minlength: 5
+                },
+                email: {
+                    required: true
+                    
+                },
                 password: {
                     required: true,
                     minlength: 5
@@ -415,6 +423,14 @@ Startuply = {
             },
 
             messages: {
+                fullname: {
+                    required: 'Nombre Requerido',
+                    minlength: 'Minimo 4 caracteres'
+                },
+                email: {
+                    required: 'Email no valido'
+                   
+                },
                 password: {
                     required: 'Please provide a password',
                     minlength: 'Your password must be at least 5 characters long'
@@ -445,33 +461,36 @@ Startuply = {
             if( msg === 'ok' ) {
                 form.reset();
 
-                if ( typeof toastr != 'undefined' ) toastr.success('Success');
-                else alert('Success');
+                if ( typeof toastr != 'undefined' ) toastr.success('Gracias por registrarte, revisa tu email para mas información.');
+                else alert('Gracias por registrarte, revisa tu email para mas información');
 
             } else {
-                if ( typeof toastr != 'undefined' ) toastr.error('An error occured. Please try again later.');
-                else alert('An error occured. Please try again later.');
+                if ( typeof toastr != 'undefined' ) toastr.error('Ocurrió un error. Por favor, inténtelo de nuevo más tarde.');
+                else alert('Ocurrió un error. Por favor, inténtelo de nuevo más tarde.');
 
                 _this.log( 'Form message', msg );
             }
         };
 
         failHandler = function () {
-            if ( typeof toastr != 'undefined' ) toastr.error('An error occured. Please try again later.');
-            else alert('An error occured. Please try again later.');
+            if ( typeof toastr != 'undefined' ) toastr.error('Ocurrió un error. Por favor, inténtelo de nuevo más tarde.');
+            else alert('Ocurrió un error. Por favor, inténtelo de nuevo más tarde.');
         }
 
         if ( $('form').length ) {
             $('form').each(function() {
                 if ( !$(this).is('.mailchimp-form') ) {
                     if ( typeof $.fn.validate == 'function' ) {
+                        
                         $(this).validate(validateOptions);
                     }else {
+                    
                         $(this).on('submit', submitHandler);
 
                         _this.log( 'Can\'t find jQuery.validate function.' );
                     }
                 }else {
+                    
                     $(this).on('submit.startuply', mailchimpHandler);
                 }
             });
@@ -1093,13 +1112,6 @@ Startuply = {
             callback();
         }
     },
-    
-    modalRegister: function (){
-        
-         $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').focus()
-        })
-    },
 
     init: function (options) {
         this.options = $.extend(this.defaults, options, $('body').data());
@@ -1133,7 +1145,6 @@ Startuply = {
         this.setEventHandlers();
 
         this.hidePreloader();
-        
-        this.modalRegister();
+      
     }
 }
